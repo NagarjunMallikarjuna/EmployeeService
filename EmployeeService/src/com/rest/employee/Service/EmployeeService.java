@@ -50,6 +50,7 @@ public class EmployeeService {
 	@DELETE
 	@Path("/delete/{empId}")
 	public Response deleteEmployee(@PathParam("empId") int empId)throws URISyntaxException{
+		System.out.println("for delete options");
 		return Response.status(200).entity("Employee with "+empId+ " is deleted successfully").build();
 	}
 }
